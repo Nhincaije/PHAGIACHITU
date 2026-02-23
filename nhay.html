@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TỰ HÀO VIỆT NAM - 12.1</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#ffecd2,#fcb69f);
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#ff416c,#ff4b2b);
+    color:white;
+    text-align:center;
+    padding:30px;
+     position: relative;
+}
+
+header img{
+    position: absolute;
+    top: 0;
+    left:10px;
+}
+
+nav{
+    background:#ff6f61;
+    text-align:center;
+    padding:10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* NÚT QUAY VỀ TRANG CHỦ CỐ ĐỊNH */
+.btn-home-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff416c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1001;
+    transition: 0.3s;
+}
+
+.btn-home-fixed:hover {
+    background: #ff4b2b;
+    transform: scale(1.1);
+}
+
+/* BANNER */
+.banner{
+    height:650px;
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("img/13.jpg") no-repeat center;
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    text-shadow:2px 2px 5px black;
+    text-align: center;
+}
+
+/* SECTION */
+.container{
+    width:85%;
+    margin:40px auto;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    margin-bottom:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.section h2{
+    color:#ff416c;
+    margin-bottom:15px;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:linear-gradient(135deg,#36d1dc,#5b86e5);
+    color:white;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin-top:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    background:linear-gradient(90deg,#ff4b2b,#ff416c);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="btn-home-fixed">🏠 Về Trang Chủ</a>
+
+<header id="top">
+    <img width="10%" src="img/88.png">
+    <h1>🇻🇳 TỰ HÀO VIỆT NAM 🇻🇳</h1>
+    <p>🎓 Tiết mục văn nghệ Lớp 12.1 - THPT Huỳnh Văn Nghệ💥</p>
+    <p>🔥 Cháy bỏng - Nhiệt huyết - Tỏa sáng🌟</p>
+    <h5>🌟🔥 Nhiệt Huyết – Máu Lửa – Thăng Hoa 🎶✨</h5>
+</header>
+
+<nav>
+    <a href="index.html">🏠 Trang chủ</a>
+    <a href="#gioithieu">🎬 Giới thiệu</a>
+    <a href="#quatrinh">👟 Tập luyện</a>
+    <a href="#khoanhkhac">📸 Khoảnh khắc</a>
+</nav>
+
+<div class="banner">
+    ✨ MÀN NHẢY SÔI ĐỘNG ✨<br> ✨LAN TỎA TINH THẦN TUỔI TRẺ ✨
+</div>
+
+<div class="container">
+
+<div class="section" id="gioithieu">
+    <h2>🌟 Ý nghĩa tiết mục</h2>
+    <p>
+        Tiết mục nhảy <b>"Tự Hào Việt Nam"</b> không chỉ là một màn biểu diễn đơn thuần 🎶💃, mà còn là tiếng nói mạnh mẽ khẳng định tinh thần và sức trẻ của 12.1 🚀✨
+    </p>
+    <p>💥 <b>Thông điệp:</b> Hòa quyện giữa truyền thống và hiện đại 🌟🤝, lan tỏa niềm tự hào dân tộc qua từng bước nhảy đầy năng lượng 🇻🇳🔥</p>
+    
+    <div class="gallery">
+        <img src="img/l.jpg" alt="Nhảy 1">
+        <img src="img/56.jpg" alt="Nhảy 2">
+        <img src="img/57.jpg" alt="Nhảy 3">
+    </div>
+</div>
+
+<div class="section" id="quatrinh">
+    <h2>🎉 Quá trình thực hiện</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="card-content">
+                <h3>💡 Lên ý tưởng</h3>
+                <p>Lựa chọn nhạc phối sôi động, biên đạo các động tác khỏe khoắn mang tinh thần Gen Z.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>💪 Tập luyện</h3>
+                <p>Những buổi chiều đổ mồ hôi trên sân trường, cùng nhau chỉnh sửa từng động tác cho đều tăm tắp.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>🧵 Trang phục</h3>
+                <p>Sắc đỏ sao vàng rực rỡ, mang đậm dấu ấn màu cờ sắc áo Việt Nam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="khoanhkhac">
+    <h2>📸 Khoảnh khắc tỏa sáng</h2>
+    <p>🔥🎉 Sân khấu rực sáng giữa tiếng reo hò vang dội 👏📣, 12.1 đã bùng cháy hết mình trong từng giai điệu và bước nhảy 💃🎶✨</p>
+
+<P>🚀🌟 Cả khán đài như vỡ òa cảm xúc 🎊🔥 khi 12.1 tự tin khuấy động sân khấu bằng năng lượng tuổi trẻ tràn đầy 💖🎵</p>
+    
+    <div class="gallery">
+        <img src="img/14.jpg">
+        <img src="img/11.jpg">
+        <img src="img/54.jpg">
+        <img src="img/13.jpg">
+    </div>
+
+    <br>
+    <b><a href="#top">⬆ Quay lên đầu trang</a></b>
+</div>
+
+<div class="section" id="camnhan">
+    <h2>💌 Cảm xúc sau ánh đèn</h2>
+    <p>💖🌈 Đêm văn nghệ ấy chắc chắn sẽ là kỷ niệm đẹp nhất của chúng ta, nơi thanh xuân bừng sáng rực rỡ 🎶🌟</p>
+
+<p>🇻🇳🔥 Tự hào là người Việt Nam, tự hào mang trong tim tinh thần nhiệt huyết và yêu nước cháy bỏng ❤️‍🔥🎵</p>
+
+<p>👑🚀 Và hơn hết, tự hào khi là một phần của Phá Gia Chi Tử – một tập thể đoàn kết, máu lửa và đầy yêu thương 💪💫</p>
+</div>
+
+</div>
+
+<footer>
+     <table>
+        <tr>
+        <td width="50%"> 
+    <p><b>📧 Email Trường THPT Huỳnh Văn Nghệ:<a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank"> thpthvnbinhduong@gmail.com </a></b></p>
+   <p> <b>Liên Hệ Số Điện Thoại: 0274.365.6357</b></p>
+   <p><b>Địa chỉ: Khu phố Uyên Hưng 4, phường Tân Uyên, thành phố Hồ Chí Minh</b></p>
+</td>
+    <td width="50%" style="text-align: right;">
+        <p><b>Liên Hệ: Họ và tên học sinh <a href="danh.html">Nguyễn Lâm Minh Danh</a>_Lớp12.1_05</b></p>
+           <p><b>Liên Hệ: Họ và tên học sinh<a href="tanh.html"> Đặng Đàm Tuấn Anh</a>_Lớp12.1_01</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="thanh.html"> Lê Trường Thành</a>_Lớp12.1_28</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="vu.html"> Nguyễn Anh Vũ</a>_Lớp12.1_36</b></p>
+        </td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+</html>s

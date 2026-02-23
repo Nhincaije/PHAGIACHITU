@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHỢ ĐÊM ĐÀ LẠT - 12.1 EXPLORE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: relative;
+}
+
+header img{
+    position: absolute;
+    top: 0;
+    left:10px;
+        }
+
+        nav {
+            background: #0f3460;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #4cc9f0;
+        }
+
+        /* BANNER */
+        .banner {
+            height: 450px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url("img/48.jpg") no-repeat center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+        }
+
+        .banner h2 { font-size: 40px; margin-bottom: 10px; }
+
+        /* CONTAINER */
+        .container {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .section h2 {
+            color: #4cc9f0;
+            margin-bottom: 20px;
+            border-left: 5px solid #4cc9f0;
+            padding-left: 15px;
+        }
+
+        /* FOOD CARDS */
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .food-card {
+            background: #fff;
+            color: #333;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .food-card:hover { transform: translateY(-10px); }
+
+        .food-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .food-card-info { padding: 20px; }
+        .food-card-info h3 { color: #e91e63; margin-bottom: 10px; }
+
+        /* GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            filter: grayscale(30%);
+            transition: 0.3s;
+        }
+
+        .gallery img:hover { filter: grayscale(0%); transform: scale(1.05); }
+
+        /* TIP BOX */
+        .tips {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #d81b60;
+            padding: 20px;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #1a1a2e;
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #4cc9f0;
+            margin-top: 50px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #4cc9f0;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+     <img width="10%" src="img/88.png">
+    <h1>🌙 CHỢ ĐÊM ĐÀ LẠT 🌙</h1>
+    <p>🔥Thiên Đường Ẩm Thực Giữa Lòng Thành Phố Sương Mù🍓</p>
+    <h4>🌫️🍽️ Thiên Đường Ẩm Thực Giữa Lòng Thành Phố Sương Mù 🍓✨</h4>
+</header>
+
+<nav>
+    <a href="index.html">🏠Trang Chủ</a>
+    <a href="#monngon">😋 Món Ngon</a>
+    <a href="#trainghiem">📸 Khoảnh Khắc Chợ Đêm</a>
+    <a href="#luuy">💡 Lưu Ý</a>
+</nav>
+
+<div class="banner">
+    <h2>🌮🔥 "Ăn sập" Đà Lạt cùng 12.1 – quẩy hết mình, no căng bụng! 🍕😋</h2>
+    <p>🔥🍢 Hương vị nóng hổi lan tỏa trong tay, ấm áp giữa tiết trời cao nguyên 🌄✨</p>
+
+<p>☕🌬️ Giữa làn sương mỏng, từng món ngon như sưởi ấm cả một khoảng trời ký ức 💖🌟</p>
+<p>❄️🌫️ Cái se lạnh phố núi khẽ chạm vào má, làm lòng người thêm xao xuyến 🏔️💙</p>
+
+</div>
+
+<div class="container">
+
+    <div class="section" id="monngon">
+        <h2>🍢 Đặc Sản Phải Thử</h2>
+        <div class="food-grid">
+            <div class="food-card">
+                <img src="img/6.jpg" alt="Bánh tráng nướng">
+                <div class="food-card-info">
+                    <h3>Bánh Tráng Nướng</h3>
+                    <p>"Pizza Đà Lạt" giòn tan, nóng hổi với trứng, hành, phô mai và khô bò.</p>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="img/7.jpg" alt="Sữa đậu nành">
+                <div class="food-card-info">
+                    <h3>Sữa Đậu Nành & Bánh Ngọt</h3>
+                    <p>Cầm ly sữa nóng, nhâm nhi chút bánh ngọt giữa trời đêm 15°C.</p>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="img/8.jpg" alt="Dâu tây">
+                <div class="food-card-info">
+                    <h3>Dâu Tây Lắc</h3>
+                    <p>Vị chua chua ngọt ngọt, cay nồng của muối ớt - đặc trưng của vùng cao.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="trainghiem">
+        <h2>📸 Khoảnh Khắc Chợ Đêm</h2>
+        <p>
+            <p>🌙✨ Dạo bước tại Chợ đêm Đà Lạt, cảm nhận sự nhộn nhịp và rực rỡ của thành phố về đêm 🎉🏮</p>
+
+<p>❄️🍢 Giữa tiết trời se lạnh, cùng 12.1 thưởng thức món nóng hổi thật ấm áp 💖🌙</p>
+
+<p>🧣🛍️ Chen qua các sạp hàng, mua mũ len đôi, ngắm dòng người tấp nập đầy sức sống 🌈✨</p>
+
+<p>📸🌸 Khoảnh khắc vui tươi, đáng nhớ – lưu giữ thanh xuân rực rỡ của 12.1 💕🎓</p>
+</p>
+        <br>
+        <div class="gallery">
+            <img src="img/5.jpg" alt="Dalat">
+            <img src="img/18.jpg" alt="Dalat">
+            <img src="img/19.jpg" alt="Dalat">
+            <img src="img/9.jpg" alt="Dalat">
+        </div>
+    </div>
+
+    <div class="section" id="luuy">
+        <h2>💡 Bí Kíp Phá Đảo Chợ Đêm</h2>
+        <div class="tips">
+            <ul>
+                <li>🧤 Hãy mặc thật ấm vì càng về đêm trời càng lạnh tê tái.</li>
+                <li>💰 Nhớ hỏi giá trước khi ăn để không bị "bỡ ngỡ" nhé.</li>
+                <li>📸 Bậc thang Hồng Kong bên hông chợ là chỗ sống ảo cực chất.</li>
+                <li>🤝 Giữ kỹ ví tiền và điện thoại khi đi vào khu vực đông người.</li>
+            </ul>
+        </div>
+    </div>
+
+    <center>
+        <a href="#top" class="back-btn">⬆ Lên đầu trang</a>
+    </center>
+
+</div>
+
+<footer>
+     <table>
+        <tr>
+        <td width="50%"> 
+    <p><b>📧 Email Trường THPT Huỳnh Văn Nghệ:<a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank"> thpthvnbinhduong@gmail.com </a></b></p>
+   <p> <b>Liên Hệ Số Điện Thoại: 0274.365.6357</b></p>
+   <p><b>Địa chỉ: Khu phố Uyên Hưng 4, phường Tân Uyên, thành phố Hồ Chí Minh</b></p>
+</td>
+    <td width="50%" style="text-align: right;">
+        <p><b>Liên Hệ: Họ và tên học sinh <a href="danh.html">Nguyễn Lâm Minh Danh</a>_Lớp12.1_05</b></p>
+           <p><b>Liên Hệ: Họ và tên học sinh<a href="tanh.html"> Đặng Đàm Tuấn Anh</a>_Lớp12.1_01</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="thanh.html"> Lê Trường Thành</a>_Lớp12.1_28</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="vu.html"> Nguyễn Anh Vũ</a>_Lớp12.1_36</b></p>
+        </td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+</html>

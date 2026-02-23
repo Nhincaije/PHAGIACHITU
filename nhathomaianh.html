@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHÀ THỜ MAI ANH - 12.1 KỶ NIỆM</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', sans-serif;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background: linear-gradient(135deg, #fff1eb 0%, #ace0f9 100%);
+            color: #444;
+        }
+
+        /* HEADER */
+        header{
+            background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            color: #d81b60;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+             position: relative;
+}
+
+header img{
+    position: absolute;
+    top: 0;
+    left:10px;
+        }
+
+        nav {
+            background: #ffffff;
+            text-align: center;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #d81b60;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ff416c;
+            text-decoration: underline;
+        }
+
+        /* BANNER */
+        .banner {
+            height: 750px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url("img/75.jpg") no-repeat center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            font-size: 28px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 5px solid #ff9a9e;
+        }
+
+        .section h2 {
+            color: #d81b60;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* INFO GRID */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .info-box {
+            padding: 20px;
+            border-radius: 15px;
+            background: #fff5f7;
+            border: 1px dashed #ff9a9e;
+        }
+
+        .info-box h3 {
+            color: #ff416c;
+            margin-bottom: 10px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: translateY(-10px) rotate(2deg);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #ff9a9e;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        .btn-top {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #d81b60;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-top:hover {
+            background: #ff416c;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<header id="top">
+    <img width="10%" src="img/88.png">
+    <h1>🌸 NHÀ THỜ MAI ANH 🌸</h1>
+    <p>📸Nơi Lưu Giữ Những Khoảnh Khắc Bình Yên Của 12.1🌤️</p>
+    <h5>🌈🤝 Chốn Bình Yên Gắn Kết Tập Thể 💕🌟</h5>
+</header>
+
+<nav>
+    <a href="index.html">🏠 Trang chủ</a>
+    <a href="#gioithieu">📜 Giới thiệu</a>
+    <a href="#kyniem">📸 Kỷ niệm</a>
+    <a href="#luuy">📍 Lưu ý</a>
+</nav>
+
+<div class="banner">
+    ✨ Vẻ đẹp kiến trúc Pháp giữa lòng Đà Lạt ✨
+</div>
+
+<div class="container">
+
+    <div class="section" id="gioithieu">
+        <h2>⛪ Nhà thờ Mai Anh</h2>
+        <p>Nhà thờ Mai Anh (hay Domaine de Marie) là một trong những biểu tượng kiến trúc độc đáo nhất tại thành phố sương mù. Với màu vôi hồng đặc trưng và lối kiến trúc kết hợp giữa phương Tây cổ điển và nhà rông Tây Nguyên, đây là điểm dừng chân không thể thiếu của nhóm 12.1 chúng mình.</p>
+        
+        <div class="info-grid">
+            <div class="info-box">
+                <h3>💖 Màu sắc đặc biệt</h3>
+                <p>Nhà thờ không dùng vôi mà dùng một loại sơn hồng đậm, tạo nên vẻ đẹp dịu dàng và cực kỳ nổi bật dưới nắng mai.</p>
+            </div>
+            <div class="info-box">
+                <h3>📐 Kiến trúc độc đáo</h3>
+                <p>Mái nhà thờ có hình dáng tựa như mái nhà rông của người dân tộc Tây Nguyên, mang lại cảm giác gần gũi và hào hùng.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="kyniem">
+        <h2>📸 12.1 Check-in "Cháy Máy"</h2>
+        <p>🌷🤍 Trong khung cảnh thanh tịnh và thơ mộng 🌫️🌼, cả lớp 12.1 tạo nên những bức ảnh đầy ánh sáng và tiếng cười 😊📷 – ký ức đẹp không thể phai 🎓✨</p>
+        <p>🌺⛪ Giữa sắc hoa dịu dàng và không gian bình yên 🌿💫, 12.1 tỏa sáng trong từng khung hình 📸🔥 – lưu giữ một thời tuổi trẻ thật đáng nhớ 💖🌈</p>
+        <p>💐🤝 Không gian tĩnh lặng, hoa nở khắp lối 🌷🌿, còn 12.1 thì nở nụ cười thật tươi 😊📸 – tạo nên những kỷ niệm lung linh của tuổi học trò 🎓💖</p>
+        
+        <div class="gallery">
+            <img src="img/70.jpg" alt="Ky niem 1">
+            <img src="img/71.jpg" alt="Ky niem 2">
+            <img src="img/73.jpg" alt="Ky niem 3">
+            <img src="img/74.jpg" alt="Ky niem 4">
+        </div>
+    </div>
+
+    <div class="section" id="luuy">
+        <h2>📍 Bí kíp sống ảo tại Mai Anh</h2>
+        <ul style="margin-left: 20px; line-height: 1.8;">
+            <li>⏰ **Thời điểm:** Nên đi vào sáng sớm (7h - 9h) để đón ánh nắng đẹp nhất lên tường hồng.</li>
+            <li>👗 **Trang phục:** Các màu như trắng, be, đen hoặc xanh nhạt sẽ rất nổi bật trên nền hồng của nhà thờ.</li>
+            <li>🙏 **Trang nghiêm:** Vì đây là nơi tôn nghiêm, hãy giữ trật tự và không làm ồn nhé các thành viên 12.1 ơi!</li>
+            <li>🎁 **Quà lưu niệm:** Phía sau nhà thờ có khu bán đồ len của các sơ, rất xinh và ý nghĩa.</li>
+        </ul>
+    </div>
+
+    <center>
+        <a href="#top" class="btn-top">⬆ Quay lại đỉnh đồi</a>
+    </center>
+
+</div>
+
+<footer>
+    <table>
+        <tr>
+        <td width="50%"> 
+    <p><b>📧 Email Trường THPT Huỳnh Văn Nghệ:<a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank"> thpthvnbinhduong@gmail.com </a></b></p>
+   <p> <b>Liên Hệ Số Điện Thoại: 0274.365.6357</b></p>
+   <p><b>Địa chỉ: Khu phố Uyên Hưng 4, phường Tân Uyên, thành phố Hồ Chí Minh</b></p>
+</td>
+    <td width="50%" style="text-align: right;">
+        <p><b>Liên Hệ: Họ và tên học sinh <a href="danh.html">Nguyễn Lâm Minh Danh</a>_Lớp12.1_05</b></p>
+           <p><b>Liên Hệ: Họ và tên học sinh<a href="tanh.html"> Đặng Đàm Tuấn Anh</a>_Lớp12.1_01</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="thanh.html"> Lê Trường Thành</a>_Lớp12.1_28</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="vu.html"> Nguyễn Anh Vũ</a>_Lớp12.1_36</b></p>
+        </td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+</html>

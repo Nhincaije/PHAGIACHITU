@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIAO LƯU CỒNG CHIÊNG - 12.1 RỰC LỬA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #1a0f00; /* Màu nền tối để nổi bật ánh lửa */
+            color: #f5f5f5;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(90deg, #d32f2f, #ff6f00);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
+             position: relative;
+}
+
+header img{
+    position: absolute;
+    top: 0;
+    left:10px;
+        }
+
+        nav {
+            background: #3e2723;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #ffb74d;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #ff6f00;
+        }
+
+        /* BANNER */
+        .banner {
+            height: 750px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url("img/33.jpg")no-repeat center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 42px;
+            font-weight: bold;
+            text-shadow: 3px 3px 10px black;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            border: 1px solid #ff6f00;
+            backdrop-filter: blur(5px);
+        }
+
+        .section h2 {
+            color: #ffab40;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ff6f00;
+            padding-bottom: 10px;
+        }
+
+        /* FEATURE BOXES */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-item {
+            background: #2d1b10;
+            padding: 20px;
+            border-radius: 15px;
+            border-top: 4px solid #d32f2f;
+            transition: 0.3s;
+        }
+
+        .feature-item:hover {
+            transform: scale(1.03);
+            background: #3e2723;
+        }
+
+        .feature-item h3 {
+            color: #ff6f00;
+            margin-bottom: 10px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 2px solid transparent;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            border-color: #ff6f00;
+            transform: translateY(-5px);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 30px;
+            border-top: 2px solid #d32f2f;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
+            background: #ff6f00;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header id="top">
+    <img width="10%" src="img/88.png">
+    <h1>🔥 GIAO LƯU CỒNG CHIÊNG 🔥</h1>
+    <p>🎊 Đêm Hội Rực Lửa Cùng Tập Thể 12.1 🔥</p>
+    <h4>🔥🎭 Khoảnh Khắc Thăng Hoa 🎶🌟
+</header>
+
+<nav>
+    <a href="index.html">🏠 Trang Chủ</a>
+    <a href="#lehoi">🥁 Lễ Hội</a>
+    <a href="#kyniem">📸 Khoảnh Khắc</a>
+    <a href="#amthuc">🍖 Đặc Sản</a>
+</nav>
+
+<div class="banner">
+    ✨ Khi Tiếng Cồng Chiêng Vang Vọng Giữa Đại Ngàn ✨
+</div>
+
+<div class="container">
+
+    <div class="section" id="lehoi">
+        <h2>🥁 Đêm Hội </h2>
+        <p>Không gì tuyệt vời hơn khi lớp 12.1 cùng nhau quây quần bên đống lửa lớn, lắng nghe tiếng cồng chiêng ngân vang và hòa mình vào những điệu múa truyền thống của người Lạch, người Chil.</p>
+        <br>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>🎶 Nhịp Điệu Tây Nguyên</h3>
+                <p>Tiếng cồng, tiếng chiêng hòa quyện tạo nên bản anh hùng ca bất tận của núi rừng Tây Nguyên hùng vĩ.</p>
+            </div>
+            <div class="feature-item">
+                <h3>💃 Vũ Điệu Xoang</h3>
+                <p>Những vòng xoang nối dài không dứt, nơi mọi khoảng cách bị xóa nhòa, chỉ còn lại tình bạn 12.1 thăng hoa.</p>
+            </div>
+            <div class="feature-item">
+                <h3>🔥 Ánh Lửa Bập Bùng</h3>
+                <p>Ngọn lửa thiêng soi sáng những gương mặt rạng rỡ, sưởi ấm cái lạnh se sắt của đêm cao nguyên.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="kyniem">
+        <h2>📸 12.1 Cùng "Phá" Đêm Hội</h2>
+        <div class="gallery">
+            <img src="img/31.jpg" alt="Cồng chiêng 1">
+            <img src="img/33.jpg" alt="Cồng chiêng 2">
+            <img src="img/34.jpg" alt="Cồng chiêng 3">
+            <img src="img/32.jpg" alt="Cồng chiêng 4">
+        </div>
+    </div>
+
+    <div class="section" id="amthuc">
+        <h2>🍖 Hương Vị Núi Rừng</h2>
+        <p>Giao lưu cồng chiêng thì không thể thiếu những món ăn đặc sản đậm chất "bản địa":</p>
+        <ul style="margin-left: 30px; margin-top: 15px; line-height: 2;">
+            <li>🍺 <b>Rượu Cần:</b> Vị men nồng nàn gắn kết anh em 12.1 bên ché rượu chung.</li>
+            <li>🍢 <b>Thịt Nướng Xiên:</b> Thơm lừng hương vị núi rừng, ăn kèm với muối tiêu rừng cay nồng.</li>
+            <li>🎋 <b>Cơm Lam:</b> Dẻo thơm mùi ống tre nứa, món ăn giản dị mà khó quên.</li>
+        </ul>
+    </div>
+
+    <center>
+        <a href="#top" class="back-btn">⬆ Lên Đầu Trang</a>
+    </center>
+
+</div>
+
+<footer>
+    <table>
+        <tr>
+        <td width="50%"> 
+    <p><b>📧 Email Trường THPT Huỳnh Văn Nghệ:<a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank"> thpthvnbinhduong@gmail.com </a></b></p>
+   <p> <b>Liên Hệ Số Điện Thoại: 0274.365.6357</b></p>
+   <p><b>Địa chỉ: Khu phố Uyên Hưng 4, phường Tân Uyên, thành phố Hồ Chí Minh</b></p>
+</td>
+    <td width="50%" style="text-align: right;">
+        <p><b>Liên Hệ: Họ và tên học sinh <a href="danh.html">Nguyễn Lâm Minh Danh</a>_Lớp12.1_05</b></p>
+           <p><b>Liên Hệ: Họ và tên học sinh<a href="tanh.html"> Đặng Đàm Tuấn Anh</a>_Lớp12.1_01</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="thanh.html"> Lê Trường Thành</a>_Lớp12.1_28</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="vu.html"> Nguyễn Anh Vũ</a>_Lớp12.1_36</b></p>
+        </td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+</html>

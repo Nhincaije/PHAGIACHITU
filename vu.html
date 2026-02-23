@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CẢM NHẬN - NGUYỄN ANH VŨ</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#ffecd2,#fcb69f);
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#ff416c,#ff4b2b);
+    color:white;
+    text-align:center;
+    padding:30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+header img{
+    position: absolute;
+    top: 0;
+    left:10px;
+}
+
+nav{
+    background:#ff6f61;
+    text-align:center;
+    padding:10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* NÚT QUAY VỀ TRANG CHỦ CỐ ĐỊNH */
+.btn-home-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff416c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1001;
+    transition: 0.3s;
+}
+
+.btn-home-fixed:hover {
+    background: #ff4b2b;
+    transform: scale(1.1);
+}
+
+/* BANNER */
+.banner{
+    height:750px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/87.jpg") no-repeat center;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    text-shadow:2px 2px 5px black;
+    text-align: center;
+    padding: 20px;
+}
+
+/* CONTAINER */
+.container{
+    width:85%;
+    margin:40px auto;
+}
+
+.section{
+    background:white;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    border-top: 8px solid #ff416c;
+}
+
+.section h2{
+    color:#ff416c;
+    margin-bottom:20px;
+    border-bottom: 2px solid #ffecd2;
+    padding-bottom: 10px;
+}
+
+/* CARDS CHO CẢM XÚC CỤ THỂ */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:linear-gradient(135deg,#36d1dc,#5b86e5);
+    color:white;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-content{
+    padding:20px;
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-left: 4px solid yellow;
+    padding-left: 10px;
+}
+
+/* GALLERY 2 ẢNH */
+.sub-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.sub-gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.sub-gallery img:hover {
+    transform: scale(1.05);
+    border-color: yellow;
+}
+
+/* FOOTER */
+footer{
+    background:linear-gradient(90deg,#ff4b2b,#ff416c);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 25px;
+    color: #ff416c;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="btn-home-fixed">🏠 Về Trang Chủ</a>
+
+<header id="top">
+    <img width="10%" src="img/88.png">
+    <h1>👑 CẢM NHẬN CỦA THÁI TỬ RAYMOND👑</h1>
+    <p>💖 NGUYỄN ANH VŨ - Lớp 12.1 - PHÁ GIA CHI TỬ 💖</p>
+    <p>✨Đây là kỷ niệm đẹp mà em sẽ luôn giữ trong tim mình 🌈</p>
+    <h5>🔥😆 Đam Mê Vận Động – Tinh Thần Lạc Quan – Lười Nhưng Vẫn Tỏa Sáng 🌈💥</h5>
+</header>
+
+<nav>
+    <a href="index.html">🏠 Trang chủ</a>
+    <a href="#chung">💌 Cảm nhận chung</a>
+    <a href="#cuthe">✨ Cảm xúc cụ thể</a>
+    <a href="#uocmo">🚀 Suy nghĩ và Ước mơ</a>
+</nav>
+
+<div class="banner">
+    👑💖 NGUYỄN ANH VŨ <br>
+    🌈💞 Khoảnh khắc ấy em sẽ cất giữ thật sâu trong tim như một phần thanh xuân rực rỡ 🎓✨
+</div>
+
+<div class="container">
+
+    <div class="section" id="chung">
+        <h2>💌 Cảm nhận chung</h2>
+        <p style="line-height: 1.8; font-size: 17px;">
+            Nhìn lại chặng đường vừa qua cùng lớp 12.1 và nhóm <b>PHÁ GIA CHI TỬ</b>, em cảm thấy mình thật may mắn. 
+            Mọi khoảnh khắc bên nhau, từ những lúc cùng cười đùa đến khi cùng nhau nỗ lực vì một mục tiêu chung, đều vô cùng đáng trân trọng. 
+            Những kỷ niệm này đã trở thành một phần tâm hồn của em, là động lực để em vững bước hơn trong cuộc sống.
+        </p>
+    </div>
+
+    <div class="section" id="cuthe">
+        <h2>✨ Cảm xúc qua các hoạt động</h2>
+        
+        <div class="cards">
+            <div class="card">
+                <div class="card-content">
+                    <h3>🌲 Đi Đà Lạt</h3>
+                    <p>Đà Lạt với em là những buổi sáng mờ sương và tiếng cười vang bên bếp lửa. Những lần cả nhóm đi dạo chợ đêm hay cùng nhau check-in tại các địa điểm đẹp đã thắt chặt thêm tình bạn. Đó là không gian mà em cảm thấy bình yên và hạnh phúc nhất.</p>
+                    <div class="sub-gallery">
+                        <img src="img/88.jpg" alt="Đà Lạt 1">
+                        <img src="img/89.jpg" alt="Đà Lạt 2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>🌸 Mừng Đảng Mừng Xuân</h3>
+                    <p>Sân khấu văn nghệ là nơi em thấy được sự bùng nổ của cả lớp. Dù tập luyện có vất vả, đôi khi có cả mồ hôi và sự lo lắng, nhưng khi nhạc vang lên và tất cả cùng nhảy, cùng hát, mọi mệt mỏi đều tan biến, chỉ còn lại sự tự hào.</p>
+                    <div class="sub-gallery">
+                        <img src="img/40.jpg" alt="Xuân 1">
+                        <img src="img/51.jpg" alt="Xuân 2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>🎪 Hội Trại</h3>
+                    <p>Những ngày cùng nhau dựng trại, cắt dán trang trí là minh chứng rõ nhất cho tinh thần đoàn kết. Em yêu cái cách mọi người hỗ trợ nhau, từ việc nhỏ nhất đến việc lớn nhất, để tạo nên một gian hàng mang đậm dấu ấn "Phá Gia Chi Tử".</p>
+                    <div class="sub-gallery">
+                        <img src="img/23.jpg" alt="Hội trại 1">
+                        <img src="img/44.jpg" alt="Hội trại 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="uocmo">
+        <h2>🚀 Suy nghĩ và Ước mơ</h2>
+        <p style="line-height: 1.8; font-size: 17px;">
+            <b>Suy nghĩ:</b> Thời gian trôi qua nhanh nhưng những gì chúng ta đã cùng nhau trải qua sẽ không bao giờ phai nhạt. 
+            Em sẽ luôn nhớ về 12.1 như một mái nhà đầy yêu thương.
+        </p>
+        <p style="line-height: 1.8; font-size: 17px; margin-top: 15px;">
+            <b>Ước mơ:</b> Em mong ước tất cả anh em trong nhóm và các bạn lớp 12.1 sẽ đều đạt được nguyện vọng của mình. 
+            Chúc cho mỗi người sẽ trở thành phiên bản tốt nhất của chính mình và thành công rực rỡ trên con đường đã chọn! 🎓✨💙
+        </p>
+        
+        <center>
+            <a href="#top" class="back-to-top">⬆ Quay lên đầu trang</a>
+        </center>
+    </div>
+
+</div>
+
+<footer>
+    <p><strong>✨ Cảm nhận từ Thái tử Raymond ✨</strong></p>
+    <p>Nguyễn Anh Vũ | Lớp 12.1 | Nhóm PHÁ GIA CHI TỬ</p>
+    <p>Mãi là gia đình 12.1 💖</p>
+     <table>
+        <tr>
+        <td width="50%"> 
+    <p><b>📧 Email Trường THPT Huỳnh Văn Nghệ:<a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank"> thpthvnbinhduong@gmail.com </a></b></p>
+   <p> <b>Liên Hệ Số Điện Thoại: 0274.365.6357</b></p>
+   <p><b>Địa chỉ: Khu phố Uyên Hưng 4, phường Tân Uyên, thành phố Hồ Chí Minh</b></p>
+</td>
+    <td width="50%" style="text-align: right;">
+        <p><b>Liên Hệ: Họ và tên học sinh <a href="danh.html">Nguyễn Lâm Minh Danh</a>_Lớp12.1_05</b></p>
+           <p><b>Liên Hệ: Họ và tên học sinh<a href="tanh.html"> Đặng Đàm Tuấn Anh</a>_Lớp12.1_01</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="thanh.html"> Lê Trường Thành</a>_Lớp12.1_28</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="vu.html"> Nguyễn Anh Vũ</a>_Lớp12.1_36</b></p>
+        </td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+</html>

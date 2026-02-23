@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song ca Made in Vietnam - PHÁ GIA CHI TỬ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* GIỮ NGUYÊN STYLE TỪ FILE GỐC ĐỂ ĐỒNG BỘ */
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Segoe UI;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background:linear-gradient(135deg,#ffecd2,#fcb69f);
+        }
+
+        header{
+            background:linear-gradient(90deg,#ff416c,#ff4b2b);
+            color:white;
+            text-align:center;
+            padding:30px;
+            position: relative;
+}
+
+header img{
+    position: absolute;
+    top: 0;
+    left:10px;
+        }
+
+        /* NÚT QUAY VỀ TRANG CHỦ CỐ ĐỊNH (FLOAT BUTTON) */
+        .btn-home-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ff416c;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1001;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-home-fixed:hover {
+            background: #ff4b2b;
+            transform: scale(1.1);
+        }
+
+        /* BANNER CHÈN ĐƯỢC HÌNH ẢNH */
+        .banner-performance {
+            height: 650px;
+            /* Bạn thay link ảnh sân khấu vào url bên dưới nhé */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url("img/40.jpg") no-repeat center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
+
+        .banner-performance h2 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .container{
+            width:85%;
+            margin: -40px auto 40px; /* Đẩy nội dung lên trên banner */
+        }
+
+        .section{
+            background:white;
+            padding:30px;
+            margin-bottom:30px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* CARDS */
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background: white;
+            border-radius:15px;
+            overflow:hidden;
+            transition:0.3s;
+            border: 2px solid #ffecd2;
+            text-align: center;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-content{
+            padding:20px;
+        }
+
+        /* ICON STYLES */
+        .icon-large {
+            font-size: 45px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .color-red { color: #d63031; }
+        .color-gold { color: #f1c40f; }
+
+        /* NÚT QUAY VỀ TRONG NỘI DUNG */
+        .btn-home {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4);
+        }
+
+        .btn-home:hover {
+            transform: scale(1.05);
+            background: #ff4b2b;
+        }
+
+        footer{
+            background:linear-gradient(90deg,#ff4b2b,#ff416c);
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+    </style>
+</head>
+<body>
+
+<a href="index.html" class="btn-home-fixed">
+    <i class="fas fa-home"></i> Về Trang Chủ
+</a>
+
+<header>
+    <img width="10%" src="img/88.png">
+    <h1>🏆🎵 Tiết Mục Song Ca Hào Hùng 🎵🏆</h1>
+    <h2>🔥🎤 MADE IN VIETNAM 🎶✨</h2>
+
+<h3>🌟🎼 Màn Song Ca Đầy Khí Thế 🎤🔥</h3>
+</header>
+
+<div class="banner-performance">
+    <h2>🌟🇻🇳 MADE IN VIETNAM 🇻🇳🌟</h2>
+    <p><i class="fas fa-star"></i> 🔥🇻🇳 Lan tỏa tinh thần yêu nước qua từng giai điệu hào hùng 🇻🇳🔥 </p>
+    <p>🎤✨ Đánh thức trái tim Việt trong từng câu hát rực cháy ✨🎤 <i class="fas fa-star"></i></p>
+</div>
+
+<div class="container">
+
+    <div class="section">
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h2 style="color: #ff416c;">🎶✨ Tiết Mục Song Ca Hào Hùng ✨🎶</h2>
+            <p>🔥🎤 Giai điệu trẻ trung hòa cùng lòng tự hào dân tộc của tập thể 12.1 🎤🔥</p>
+            <p>✨🔥 Bản hòa ca đầy cảm xúc, thể hiện tinh thần yêu nước rực cháy của 12.1 🔥✨</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="img/51.jpg" alt="Song ca"> <div class="card-content">
+                    <span class="icon-large color-red">
+                        <i class="fas fa-microphone-alt"></i>
+                    </span>
+                    <h3>🌟Hào hùng & Sôi động 🎤</h3>
+                    <p style="color: #555; line-height: 1.6;">
+                        🔥🎉 Giai điệu rực cháy như thắp sáng niềm tin và khát vọng tuổi trẻ 🚀✨, để mỗi người đều cảm nhận rõ niềm tự hào mang tên Việt Nam 🇻🇳💖</p>
+
+<p style="color: #555; line-height: 1.6;">🎵🌈 Thanh âm mạnh mẽ vang xa, hun đúc ý chí và lòng yêu nước nồng nàn 🇻🇳🔥, làm cả khán đài vỡ òa trong tiếng vỗ tay không ngớt 👏🌟
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/12.jpg" alt="Tự hào"> <div class="card-content">
+                    <span class="icon-large color-gold">
+                        <i class="fas fa-flag"></i>
+                    </span>
+                    <h3>🌈Niềm tự hào dân tộc 🇻🇳🔥</h3>
+                    <p style="color: #555; line-height: 1.6;">
+                       🌟🎤 Đây không chỉ là âm nhạc, mà là tinh thần gắn kết mạnh mẽ của PHÁ GIA CHI TỬ 💪✨, cùng nhau tỏa sáng và lan tỏa tình yêu quê hương 🇻🇳🌈</p>
+
+ <p style="color: #555; line-height: 1.6;">🚀💫 Không chỉ là giai điệu vang lên trên sân khấu, đó là trái tim chung của cả nhóm ❤️‍🔥🎵, gửi trọn niềm tự hào dân tộc vào từng nhịp điệu 🇻🇳🔥
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="btn-home">
+                <i class="fas fa-arrow-left"></i> Quay về Trang Chủ
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+   <table>
+        <tr>
+        <td width="50%"> 
+    <p><b>📧 Email Trường THPT Huỳnh Văn Nghệ:<a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank"> thpthvnbinhduong@gmail.com </a></b></p>
+   <p> <b>Liên Hệ Số Điện Thoại: 0274.365.6357</b></p>
+   <p><b>Địa chỉ: Khu phố Uyên Hưng 4, phường Tân Uyên, thành phố Hồ Chí Minh</b></p>
+</td>
+    <td width="50%" style="text-align: right;">
+        <p><b>Liên Hệ: Họ và tên học sinh <a href="danh.html">Nguyễn Lâm Minh Danh</a>_Lớp12.1_05</b></p>
+           <p><b>Liên Hệ: Họ và tên học sinh<a href="tanh.html"> Đặng Đàm Tuấn Anh</a>_Lớp12.1_01</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="thanh.html"> Lê Trường Thành</a>_Lớp12.1_28</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="vu.html"> Nguyễn Anh Vũ</a>_Lớp12.1_36</b></p>
+        </td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+</html>

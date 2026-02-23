@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÙNG NHAU THỰC HIỆN - PHÁ GIA CHI TỬ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+        }
+
+        /* BANNER CHÈN HÌNH ẢNH */
+        .banner-detail {
+            height: 750px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url("img/gianhang.jpg") no-repeat center; /* Thay hình ảnh banner tại đây */
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+            position: relative;
+        }
+
+        .logo{
+            position: absolute;
+            top: 20px;
+            left: 90px;
+            width: 10%;
+            height: auto;
+            z-index: 10;
+}
+        .banner-detail h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* CONTAINER & SECTION */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: -50px auto 40px; /* Đẩy nội dung lên trên banner một chút */
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: 0.3s;
+            border: 2px solid #ffecd2;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #ff416c;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        /* ICON STYLES */
+        .icon-box {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .color-joy { color: #ff9f43; } /* Màu cam cho tiếng cười */
+        .color-help { color: #2e86de; } /* Màu xanh cho hỗ trợ */
+
+        /* NÚT QUAY VỀ */
+        .btn-back {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 35px;
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+        }
+
+        .btn-back:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(255, 65, 108, 0.6);
+        }
+
+        footer {
+            background: linear-gradient(90deg, #ff4b2b, #ff416c);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner-detail">
+    <img src="img/88.png" class="logo">
+    <h1><i class="fas fa-tools"></i> 🔥🤝✨ CÙNG NHAU THỰC HIỆN ✨🤝🔥</h1>
+    <p>
+        <p>🔥 12.1 - Nơi tình thân bắt đầu từ những hành động nhỏ nhất 🔥</p>
+        <p>🔥👫Bắt đầu từ những điều bé nhỏ, tạo nên thanh xuân rực rỡ 🎉🌟</p>
+    </p>
+</div>
+
+<div class="container">
+    <div class="section">
+        <div style="text-align: center;">
+            <h2 style="color: #ff416c; font-size: 2rem;">🚀 Giai Đoạn Hoàn Thiện</h2>
+            <p style="color: #666; margin-top: 10px;">🌟🤝 Chúng ta đã sát cánh bên nhau qua những ngày chuẩn bị thật đáng nhớ 💖✨
+            <p style="color: #666; margin-top: 10px;">💫🏆 Chính những ngày ấy đã tạo nên một tập thể mạnh mẽ và tràn đầy nhiệt huyết 🔥💖</p>
+            </p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="img/42.jpg" alt="Trang trí"> <div class="card-content">
+                    <span class="icon-box color-joy">
+                        <i class="fas fa-laugh-squint"></i>
+                        <i class="fas fa-paint-brush"></i>
+                    </span>
+                    <h3 style="color: #ff9f43;">Trang trí đầy tiếng cười 😆</h3>
+                    <p style="color: #555; line-height: 1.6;">
+                        Từng nét vẽ, từng mẩu giấy trang trí đều thấm đẫm những câu chuyện hài hước và tiếng cười giòn giã của các thành viên. 
+                        Làm việc nhưng không quên "tấu hài"!
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/22.jpg" alt="Hỗ trợ"> <div class="card-content">
+                    <span class="icon-box color-help">
+                        <i class="fas fa-hands-helping"></i>
+                        <i class="fas fa-heart"></i>
+                    </span>
+                    <h3 style="color: #2e86de;">Hỗ trợ nhau hết mình 💪💞</h3>
+                    <p style="color: #555; line-height: 1.6;">
+                        Không phân biệt nhiệm vụ, ai rảnh tay là vào giúp ngay. 
+                        Một người khiêng, hai người nâng, tinh thần đồng đội của 12.1 luôn được đẩy lên cao nhất trong giai đoạn này!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="btn-back">
+                <i class="fas fa-home"></i> QUAY VỀ TRANG CHỦ
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <table>
+        <tr>
+        <td width="50%"> 
+    <p><b>📧 Email Trường THPT Huỳnh Văn Nghệ:<a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank"> thpthvnbinhduong@gmail.com </a></b></p>
+   <p> <b>Liên Hệ Số Điện Thoại: 0274.365.6357</b></p>
+   <p><b>Địa chỉ: Khu phố Uyên Hưng 4, phường Tân Uyên, thành phố Hồ Chí Minh</b></p>
+</td>
+    <td width="50%" style="text-align: right;">
+        <p><b>Liên Hệ: Họ và tên học sinh <a href="danh.html">Nguyễn Lâm Minh Danh</a>_Lớp12.1_05</b></p>
+           <p><b>Liên Hệ: Họ và tên học sinh<a href="tanh.html"> Đặng Đàm Tuấn Anh</a>_Lớp12.1_01</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="thanh.html"> Lê Trường Thành</a>_Lớp12.1_28</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="vu.html"> Nguyễn Anh Vũ</a>_Lớp12.1_36</b></p>
+        </td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+</html>

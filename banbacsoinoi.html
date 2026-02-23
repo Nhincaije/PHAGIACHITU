@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHUẨN BỊ & Ý TƯỞNG - PHÁ GIA CHI TỬ</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#fff1eb,#ace0f9);
+}
+
+header{
+    background:linear-gradient(90deg,#ff416c,#ff4b2b);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+nav{
+    background:#ff6f61;
+    text-align:center;
+    padding:15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+     position: relative;
+}
+
+header img{
+    position: absolute;
+    top: 0;
+    left:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size: 16px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffeb3b;
+}
+
+/* NÚT QUAY VỀ TRANG CHỦ CỐ ĐỊNH */
+.btn-home-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff416c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+
+.banner{
+    height:750px;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("img/49.jpg") no-repeat center;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container{
+    width:85%;
+    max-width: 1000px;
+    margin:40px auto;
+}
+
+.section{
+    background:white;
+    padding:35px;
+    margin-bottom:40px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    border-top: 8px solid #ff416c;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius:20px;
+}
+
+footer{
+    background:linear-gradient(90deg,#ff4b2b,#ff416c);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="btn-home-fixed">🏠 Về Trang Chủ</a>
+
+<header id="top">
+    <img width="10%" src="img/88.png">
+    <h1>🎨 CHUẨN BỊ & LÊN Ý TƯỞNG 💡</h1>
+    <p>🚀Lớp 12.1 - Sáng Tạo Không Giới Hạn🎨</p>
+    <h5>💥🎓 Bản Lĩnh Tạo Nên Khác Biệt 🌟🔥
+</header>
+
+<nav>
+    <a href="index.html">🏠 Trang Chủ</a>
+    <a href="#banbac">🤗 Bàn Bạc Sôi Nổi</a>
+    <a href="#phancong">🌟 Phân Công & Sáng Tạo</a>
+</nav>
+
+<div class="banner">
+    <h1>🌈🔥 Một ý tưởng táo bạo có thể mở ra cả bầu trời cơ hội 💭🌤️</h1>
+</div>
+
+<div class="container">
+    <div class="section" id="banbac">
+        <h2>🤗 Bàn Bạc Sôi Nổi</h2>
+        <p>🔥 Cả nhóm cùng nhau thảo luận sôi nổi để chuẩn bị gian hàng ấn tượng ✨</p>
+        <p>🎨💡 Mọi người cùng góp ý sôi nổi, quyết tâm chuẩn bị gian hàng thật ấn tượng 🏕️🌟</p>
+
+<p>🤝🔥 Từng ý tưởng được chia sẻ nhiệt tình, cùng nhau xây dựng gian hàng độc đáo 🎋✨</p>
+        <div class="gallery">
+            <img src="img/45.jpg">
+            <img src="img/21.jpg">
+        </div>
+    </div>
+
+    <div class="section" id="phancong">
+        <h2>🌟 Phân Công, Cùng Sáng Tạo</h2>
+        <p>🎨 Cả nhóm bắt tay thực hiện theo đúng sở trường của mình ✨</p>
+        <p>🛠️🌈 Ai giỏi việc nấy, cùng nhau ghép lại thành bức tranh rực rỡ 🎉✨</p>
+
+<p>🚀🎭 Từng cá tính riêng hòa quyện để tạo nên thành công chung 💫🤍</p>
+        <div class="gallery">
+            <img src="img/46.jpg">
+            <img src="img/47.jpg">
+        </div>
+        <center><br><b><a href="#top" style="color: #ff416c; font-weight: bold; text-decoration: none;">⬆ Quay lên đầu trang</a></b></center>
+    </div>
+</div>
+
+<footer>
+   <table>
+        <tr>
+        <td width="50%"> 
+    <p><b>📧 Email Trường THPT Huỳnh Văn Nghệ:<a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank"> thpthvnbinhduong@gmail.com </a></b></p>
+   <p> <b>Liên Hệ Số Điện Thoại: 0274.365.6357</b></p>
+   <p><b>Địa chỉ: Khu phố Uyên Hưng 4, phường Tân Uyên, thành phố Hồ Chí Minh</b></p>
+</td>
+    <td width="50%" style="text-align: right;">
+        <p><b>Liên Hệ: Họ và tên học sinh <a href="danh.html">Nguyễn Lâm Minh Danh</a>_Lớp12.1_05</b></p>
+           <p><b>Liên Hệ: Họ và tên học sinh<a href="tanh.html"> Đặng Đàm Tuấn Anh</a>_Lớp12.1_01</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="thanh.html"> Lê Trường Thành</a>_Lớp12.1_28</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="vu.html"> Nguyễn Anh Vũ</a>_Lớp12.1_36</b></p>
+        </td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CẢM NHẬN - LÊ TRƯỜNG THÀNH</title>
+
+<style>
+/* Kế thừa style đồng bộ từ hệ thống Phá Gia Chi Tử */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#ffecd2,#fcb69f);
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#ff416c,#ff4b2b);
+    color:white;
+    text-align:center;
+    padding:30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+header img{
+    position: absolute;
+    top: 0;
+    left:10px;
+}
+
+nav{
+    background:#ff6f61;
+    text-align:center;
+    padding:10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* NÚT QUAY VỀ TRANG CHỦ CỐ ĐỊNH */
+.btn-home-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff416c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1001;
+    transition: 0.3s;
+}
+
+.btn-home-fixed:hover {
+    background: #ff4b2b;
+    transform: scale(1.1);
+}
+
+/* BANNER */
+.banner{
+    height:650px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/65.jpg") no-repeat center;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    text-shadow:2px 2px 5px black;
+    text-align: center;
+}
+
+/* CONTAINER */
+.container{
+    width:85%;
+    margin:40px auto;
+}
+
+.section{
+    background:white;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    border-top: 8px solid #ff416c;
+}
+
+.section h2{
+    color:#ff416c;
+    margin-bottom:20px;
+    border-bottom: 2px solid #ffecd2;
+    padding-bottom: 10px;
+}
+
+/* CARDS CHO CẢM XÚC CỤ THỂ */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:linear-gradient(135deg,#36d1dc,#5b86e5);
+    color:white;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    padding: 20px;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-left: 4px solid yellow;
+    padding-left: 10px;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.gallery img{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius:12px;
+    transition:0.3s;
+    border: 3px solid #fff;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    border-color: #ff416c;
+}
+
+/* FOOTER */
+footer{
+    background:linear-gradient(90deg,#ff4b2b,#ff416c);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 25px;
+    color: #ff416c;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="btn-home-fixed">🏠 Về Trang Chủ</a>
+
+<header id="top">
+    <img width="10%" src="img/88.png">
+    <h1>👑 CẢM NHẬN CỦA THÁI TỬ RAUMANIA 👑</h1>
+    <p>🎓 Lê Trường Thành - Lớp 12.1 - PHÁ GIA CHI TỬ 🤝</p>
+    <p>🌸Chuyến đi giúp em thêm trân trọng tình bạn và tập thể 12.1 🤝💙</p>
+    <h5>💬🎓 Thân Thiện – Chăm Học – Năng Lượng Luôn Tràn Đầy 🌈🔥</h5>
+</header>
+
+<nav>
+    <a href="index.html">🏠 Trang chủ</a>
+    <a href="#chung">💌 Cảm nhận chung</a>
+    <a href="#cuthe">✨ Cảm xúc cụ thể</a>
+    <a href="#uocmo">🚀 Suy nghĩ và Ước mơ</a>
+</nav>
+
+<div class="banner">
+    👑 LÊ TRƯỜNG THÀNH 💫<br>
+    "🎒💞 Chuyến đi đã thắt chặt tình bạn và để lại trong em thật nhiều yêu thương 🌤️😊"
+</div>
+
+<div class="container">
+
+    <div class="section" id="chung">
+        <h2>💌 Cảm nhận chung</h2>
+        <p style="line-height: 1.8; font-size: 17px;">
+            Trải qua những năm tháng dưới mái trường THPT Huỳnh Văn Nghệ, em nhận ra rằng điều quý giá nhất không chỉ là kiến thức, mà chính là những người bạn đồng hành. 
+            Là một thành viên của nhóm <b>PHÁ GIA CHI TỬ</b>, em cảm thấy may mắn khi được sống trong một tập thể 12.1 đầy nhiệt huyết, nơi mỗi cá nhân đều tỏa sáng theo cách riêng nhưng luôn gắn kết thành một khối thống nhất.
+            Những hoạt động vừa qua đã giúp em hiểu rõ hơn giá trị của sự đoàn kết và trân trọng từng phút giây quý giá bên bạn bè. Với mình, quãng thời gian học tập dưới mái trường THPT Huỳnh Văn Nghệ cùng tập thể 12.1 không chỉ là những giờ học trên lớp mà còn là một phần thanh xuân rực rỡ. Mỗi hoạt động tập thể đều góp phần thắp sáng tuổi trẻ, giúp mình học được cách yêu thương, sẻ chia và trân trọng những khoảnh khắc bên bạn bè. Đó sẽ mãi là ký ức đẹp không thể nào quên 💙
+        </p>
+    </div>
+
+    <div class="section" id="cuthe">
+        <h2>✨ Cảm xúc cụ thể qua các hoạt động</h2>
+        
+        <div class="cards">
+            <div class="card">
+                <h3>🌲 Đi Đà Lạt</h3>
+                <p>
+                    Chuyến đi Đà Lạt cùng bạn bè là một phần ký ức thanh xuân thật đẹp: cùng nhau dạo Chợ đêm Đà Lạt 🌙🍢 trong cái lạnh se buốt, hóa “du mục” ở Mongo Land 🐎🌾, lặng ngắm nét dịu dàng của Nhà thờ Mai Anh 🌸⛪ và tìm chút an yên tại Thiền Viện Trúc Lâm 🍃🙏. Tất cả đã cùng nhau tạo nên những kỷ niệm trong veo của tuổi học trò, để rồi khi khép lại những năm tháng cuối cấp, 12.1 sẽ mãi là cái tên khiến mình mỉm cười mỗi khi nhớ về 💙❄️✨
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌸 Mừng Đảng Mừng Xuân</h3>
+                <p>
+                   Những ngày luyện tập văn nghệ cho sự kiện mừng Đảng – mừng Xuân của nhà trường là chuỗi ngày vừa mệt vừa vui, đầy tiếng cười và cả những giọt mồ hôi sau giờ học 🎶💃. Từ những buổi tập còn vụng về đến khi các tiết mục dần hoàn thiện, tụi mình đã cùng nhau cố gắng, động viên và không bỏ cuộc. Và rồi khoảnh khắc tên tiết mục được xướng lên ở giải cao, cảm xúc như vỡ òa — tự hào, hạnh phúc và biết ơn vì đã có nhau trong những ngày thanh xuân rực rỡ ấy 🌸🏆✨
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎪 Hội Trại (Gian hàng)</h3>
+                <p>
+                    Những ngày cùng nhau dựng gian hàng tre là chuỗi ngày thật vất vả nhưng đầy ắp kỷ niệm 🌿💦. Tay lấm lem, mồ hôi ướt áo 😅 nhưng bù lại là tiếng cười không ngớt 😂🎶 và sự gắn kết của cả tập thể 🤝💞. Từng thanh tre, từng sợi dây đều được làm nên bằng sự kiên nhẫn và cố gắng 💪✨. Và rồi khi gian hàng hoàn thiện 🏕️🌟, mọi mệt mỏi như tan biến, để lại niềm vui, sự tự hào và cảm giác rằng mọi vất vả ấy cuối cùng cũng được đền đáp xứng đáng 💙🏆🌈
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="img/67.jpg" alt="Kỷ niệm 1">
+            <img src="img/69.jpg" alt="Kỷ niệm 2">
+            <img src="img/68.jpg" alt="Kỷ niệm 3">
+            <img src="img/66.jpg" alt="Kỷ niệm 4">
+        </div>
+    </div>
+
+    <div class="section" id="uocmo">
+        <h2>🚀 Suy nghĩ và Ước mơ</h2>
+        <p style="line-height: 1.8; font-size: 17px;">
+            <b>Suy nghĩ:</b> Tất cả những cảm xúc từ chuyến đi Đà Lạt mộng mơ ❄️🌲, những ngày miệt mài tập luyện cho chương trình mừng Đảng – mừng Xuân 🎶🌸, đến lúc cùng nhau dựng gian hàng tre vất vả mà đầy ắp tiếng cười 🌿 đã góp nhặt nên một thanh xuân thật rực rỡ. Có mệt mỏi, có áp lực 😅💦 nhưng đổi lại là niềm vui vỡ òa, là sự tự hào và những kỷ niệm không thể nào quên 💙✨. Cảm ơn 12.1 – vì đã cùng nhau đi qua những ngày tháng ấy, để khi nhớ lại, lòng vẫn thấy ấm áp và mỉm cười 😊📖💫. Thanh xuân của chúng ta thật rực rỡ khi có nhau. 12.1 không chỉ là một lớp học, mà là gia đình thứ hai mà em sẽ luôn nhớ về dù sau này có đi đâu xa. 
+            Mọi khó khăn trong quá trình tập luyện hay tổ chức hoạt động đều là những bài học quý báu về lòng kiên trì và sự sẻ chia.
+        </p>
+        <p style="line-height: 1.8; font-size: 17px; margin-top: 15px;">
+            <b>Ước mơ:</b> Ước mơ của mình là trở thành người mà bản thân luôn mong muốn — một phiên bản tốt hơn của chính mình, biết cố gắng, biết kiên trì và không ngừng trưởng thành trên con đường phía trước 🌱✨. Dù mai này mỗi người một hướng, một ước mơ riêng, mình vẫn sẽ luôn mang theo trong tim những kỷ niệm đẹp đã từng có cùng 12.1 💙📖. Đó là những ngày cùng nhau học tập, vui chơi, sẻ chia cả tiếng cười lẫn mệt mỏi, để rồi tất cả trở thành một phần không thể thiếu của thanh xuân. Chính những ký ức ấy sẽ là hành trang quý giá, nhắc mình nhớ rằng đã từng có một thời tuổi trẻ thật rực rỡ, thật chân thành và đáng trân trọng đến nhường nào 🌈😊✨. Em mong rằng tất cả các thành viên trong tập thể 12.1 và đặc biệt là nhóm Phá Gia Chi Tử sẽ cùng nhau vượt vũ môn hóa rồng, 
+            chạm tay vào cánh cửa Đại học mà mình mơ ước. Chúc cho hành trình tương lai của mỗi người sẽ luôn rực rỡ như những ngày tháng chúng ta đã bên nhau! 💖🎓🚀
+        </p>
+        
+        <center>
+            <a href="#top" class="back-to-top">⬆ Quay lên đầu trang</a>
+        </center>
+    </div>
+
+</div>
+
+<footer>
+    <p><strong>✨ Cảm nhận từ Thái tử Raumania ✨</strong></p>
+     <table>
+        <tr>
+        <td width="50%"> 
+    <p><b>📧 Email Trường THPT Huỳnh Văn Nghệ:<a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank"> thpthvnbinhduong@gmail.com </a></b></p>
+   <p> <b>Liên Hệ Số Điện Thoại: 0274.365.6357</b></p>
+   <p><b>Địa chỉ: Khu phố Uyên Hưng 4, phường Tân Uyên, thành phố Hồ Chí Minh</b></p>
+</td>
+    <td width="50%" style="text-align: right;">
+        <p><b>Liên Hệ: Họ và tên học sinh <a href="danh.html">Nguyễn Lâm Minh Danh</a>_Lớp12.1_05</b></p>
+           <p><b>Liên Hệ: Họ và tên học sinh<a href="tanh.html"> Đặng Đàm Tuấn Anh</a>_Lớp12.1_01</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="thanh.html"> Lê Trường Thành</a>_Lớp12.1_28</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="vu.html"> Nguyễn Anh Vũ</a>_Lớp12.1_36</b></p>
+        </td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+</html>

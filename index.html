@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHÁ GIA CHI TỬ</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#ffecd2,#fcb69f);
+}
+
+/* HEADER */
+header{
+
+    background:linear-gradient(90deg,#ff416c,#ff4b2b);
+    color:white;
+    text-align:center;
+    padding:30px;
+    position: relative;
+}
+
+header img{
+    position: absolute;
+    top: 0;
+    left:10px;
+}
+nav{
+    background:#ff6f61;
+    text-align:center;
+    padding:10px;
+    position: sticky; /* Giữ menu ở trên cùng khi cuộn */
+    top: 0;
+    z-index: 1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* NÚT QUAY VỀ TRANG CHỦ CỐ ĐỊNH (Góc màn hình) */
+.btn-home-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff416c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1001;
+    transition: 0.3s;
+}
+
+.btn-home-fixed:hover {
+    background: #ff4b2b;
+    transform: scale(1.1);
+}
+
+/* BANNER */
+.banner{
+    height:550px;
+    background:url("img/4nguoi.jpg") no-repeat center;
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    text-shadow:2px 2px 5px black;
+}
+
+/* SECTION */
+.container{
+    width:85%;
+    margin:40px auto;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    margin-bottom:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.section h2{
+    color:#ff416c;
+    margin-bottom:15px;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:linear-gradient(135deg,#36d1dc,#5b86e5);
+    color:white;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card-content a{
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 12px;
+    background:white;
+    color:#ff416c;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin-top:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    background:linear-gradient(90deg,#ff4b2b,#ff416c);
+    color:white;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<a href="#top" class="btn-home-fixed">🏠 Lên Đầu Trang</a>
+
+<header id="top">
+    <img width="10%" src="img/88.png">
+    <h1>🔥 PHÁ GIA CHI TỬ 🔥</h1>
+    <p>🎓 Lớp 12.1 - Trường THPT Huỳnh Văn Nghệ🏫</p>
+    <p>🚀 Đoàn Kết - Sáng Tạo - Bứt Phá🔥</p>
+    <h5>🔥🎓 Tự Hào Dưới Mái Trường Huỳnh Văn Nghệ 💥🏫</h5>
+</header>
+
+<nav>
+    <a href="#trangchu">🏠 Trang chủ</a>
+    <a href="#hoatdong">🎉 Hoạt động</a>
+    <a href="#camnhan">💌 Cảm nhận</a>
+</nav>
+
+<div class="banner">
+    ✨ Chào mừng đến với Website Nhóm PHÁ GIA CHI TỬ ✨
+</div>
+
+<div class="container">
+
+<div class="section" id="trangchu">
+    <h2>🌟 Trang chủ</h2>
+    <p>
+        🎊 Chào mừng bạn đến với đại gia đình PHÁ GIA CHI TỬ🎊
+<p>Nơi lưu giữ những khoảnh khắc rực rỡ nhất của tuổi trẻ 💖</p>
+
+<p>💥 Slogan: “Chơi hết mình 🎯 – Học hết sức 📚 – Gắn kết bền lâu 🤝”</p>
+
+<p>PHÁ GIA không chỉ là một cái tên, mà là một hành trình thanh xuân đầy sắc màu 🎨
+Ở đây có:</p>
+<p>🌟 Sự đoàn kết.</p>
+<p>🔥 Nhiệt huyết.</p>
+<p>😂 Tiếng cười.</p>
+<p>💞 Và những tình bạn chân thành.</p>
+
+Mỗi thành viên đều là một mảnh ghép quan trọng 🧩 tạo nên một tập thể tuyệt vời 💎
+    </p>
+
+    <div class="gallery">
+        <img src="img/dalat.jpg">
+        <img src="img/vannghe.jpg">
+        <img src="img/gianhang.jpg">
+    </div>
+</div>
+
+<div class="section" id="hoatdong">
+    <h2>🎉 Hoạt động nổi bật</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="img/lop.jpg">
+            <div class="card-content">
+                <h3>🌲 Đi Đà Lạt</h3>
+                <p>Chuyến đi đầy kỷ niệm.</p>
+                <a href="#dalat">Xem thêm</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/52.jpg">
+            <div class="card-content">
+                <h3>🌸 Mừng Đảng Mừng Xuân</h3>
+                <p>Hoạt động văn nghệ sôi động.</p>
+                <a href="#mungxuan">Xem thêm</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/25.jpg">
+            <div class="card-content">
+                <h3>🎪 Hội Trại</h3>
+                <p>Gây quỹ lớp vui nhộn.</p>
+                <a href="#gianhang">Xem thêm</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="section" id="dalat">
+    <h2>🌲 Chi tiết Đi Đà Lạt</h2>
+    <p>✨ 12.1 - HÀNH TRÌNH CHẠM VÀO MÂY NGÀN ✨
+
+<p>📸 Check-in "cháy máy" tại những tọa độ cực hot:</p>
+
+<p><b><a href="chodemdalat.html">Chợ đêm Đà Lạt:</a></b> Lạc lối giữa thiên đường ẩm thực, ăn bánh tráng nướng và tận hưởng cái se lạnh phố núi 🍢🥖☕</p>
+
+<p><b><a href="mongoland.html">Mongoland:</a></b> Hóa thân thành những "du mục" thực thụ giữa thảo nguyên rộng lớn, vui đùa cùng các em thú siêu cưng 🐑🏹🏜️</p>
+
+<p><b><a href="nhathomaianh.html">Nhà thờ Mai Anh:</a></b> Ngắm nhìn kiến trúc cổ kính duyên dáng với gam màu hồng đặc trưng dưới nắng mai ⛪🌸💖</p>
+
+<p><b><a href="thienvientruclam.html">Thiền viện Trúc Lâm:</a></b> Tìm về khoảng lặng bình yên, ngắm nhìn hồ Tuyền Lâm xanh biếc từ trên cao 🧘‍♂️🌲🛶</p>
+
+<p><b><a href="giaoluucongchien.html">Giao lưu Cồng chiêng:</a></b> Hòa mình vào vũ điệu hoang dã bên ánh lửa hồng, cảm nhận nhịp sống hào hùng của Tây Nguyên 💃🔥🥁</p>
+
+<p>🌈 Thanh xuân của 12.1 là những chuyến đi cùng nhau! 🌈</p>
+
+    <div class="gallery">
+        <img src="img/1.jpg">
+        <img src="img/2.jpg">
+        <img src="img/3.jpg">
+        <img src="img/4.jpg">
+    </div>
+
+    <br>
+    <b><a href="#top">⬆ Quay lên đầu trang</a></b>
+</div>
+
+<div class="section" id="mungxuan">
+    <h2>🌸 Chi tiết Mừng Đảng Mừng Xuân</h2>
+<p>
+    <p>Lễ “Mừng Đảng – Mừng Xuân” rộn ràng, ấm áp và đầy tự hào 🎉🌸</p>
+
+<p><b><a href="songca.html">Song ca Made in Vietnam hào hùng, khơi dậy niềm tự hào dân tộc 🇻🇳🔥</a></b></p>
+
+<p><b><a href="nhay.html">Màn nhảy Tự Hào Việt Nam sôi động, lan tỏa tinh thần tuổi trẻ 💃✨</a></b></p>
+</p>
+    <div class="gallery">
+        <img src="img/11.jpg">
+        <img src="img/54.jpg">
+        <img src="img/55.jpg">
+        <img src="img/14.jpg">
+    </div>
+
+    <br>
+    <b><a href="#top">⬆ Quay lên đầu trang</a></b>
+</div>
+
+<div class="section" id="gianhang">
+    <h2>🎪 Chi tiết Gian hàng</h2>
+<p>
+   <b> <a href="banbacsoinoi.html">Chuẩn bị & lên ý tưởng 🎨💡:</a></b>
+
+<p>-Bàn bạc sôi nổi 🤗</p>
+
+<p>-Phân công, cùng sáng tạo 🌟</p>
+
+<p><b><a href="cungnhauthuchien.html">Cùng nhau thực hiện 🎪✨:</a></b></p>
+
+<p>-Trang trí đầy tiếng cười 😆</p>
+
+<p>-Hỗ trợ nhau hết mình 💪💞</p>
+</p>
+    <div class="gallery">
+        <img src="img/49.jpg">
+        <img src="img/22.jpg">
+        <img src="img/23.jpg">
+        <img src="img/24.jpg">
+    </div>
+
+    <br>
+    <b><a href="#top">⬆ Quay lên đầu trang</a></b>
+</div>
+
+<div class="section" id="camnhan">
+    <h2>💌 Cảm nhận</h2>
+
+    <p>❄️Chuyến đi 3N2Đ tại Đà Lạt đã để lại trong em muôn vàn cảm xúc đẹp 🌤️,💖giữa khung cảnh thơ mộng 12.1 càng thêm gắn bó🤝🌲</p>
+<p>🔥Tiếng cười, những trò chơi và khoảnh khắc sinh hoạt tập thể 🎉 ✨đã tạo nên ký ức rực rỡ của tuổi học trò 🎓🌈</p>
+<p>🎶Những ngày tập văn nghệ tuy mệt nhưng đầy quyết tâm 💃, cả lớp cùng nhau cố gắng để tỏa sáng trong đêm chung kết rực rỡ👏🌟</p>
+<p>🛠️Quá trình dựng gian hàng tre vất vả mà chan chứa tinh thần đoàn kết 🎋,🥤những món ăn tự tay chuẩn bị nhận được sự ủng hộ nhiệt tình🍢😊.</p>
+<p>🌟 Thanh xuân của chúng ta thật rực rỡ – 12.1 mãi là gia đình thứ hai, cùng nhau chạm tới ước mơ đại học nhé!💖🎓🚀</p>
+<p><b><a href="thanh.html">👑💫Lê Trường Thành (Thái tử Raumania):</a></b> Chuyến đi giúp em thêm trân trọng tình bạn và tập thể 12.1 🤝💙</p>
+
+<p><b><a href="danh.html">👑🌟 Nguyễn Lâm Minh Danh (Thái tử Albert):</a></b> Em nhớ mãi không khí vui tươi và những tiếng cười giòn tan 😂🎶</p>
+
+<p><b><a href="tanh.html">👑🔥 Đặng Đàm Tuấn Anh (Thái tử Bevis):</a></b> Những hoạt động tập thể đã làm thanh xuân thêm bùng cháy 🚀🎉</p>
+
+<p><b><a href="vu.html">👑💖 Nguyễn Anh Vũ (Thái tử Raymond):</a></b> Đây là kỷ niệm đẹp mà em sẽ luôn giữ trong tim mình 🌈✨</p>
+</p>
+
+    <div class="gallery">
+        <img src="img/58.jpg">
+        <img src="img/59.jpg">
+        <img src="img/60.jpg">
+    </div>
+
+    <br>
+    <div style="text-align: center;">
+        <a href="#top" style="color: #ff416c; font-weight: bold; text-decoration: none;">🏠 Quay về đầu trang </a>
+    </div>
+</div>
+
+</div>
+
+<footer>
+    <table>
+        <tr>
+        <td width="50%"> 
+    <p><b>📧 Email Trường THPT Huỳnh Văn Nghệ:<a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank"> thpthvnbinhduong@gmail.com </a></b></p>
+   <p> <b>Liên Hệ Số Điện Thoại: 0274.365.6357</b></p>
+   <p><b>Địa chỉ: Khu phố Uyên Hưng 4, phường Tân Uyên, thành phố Hồ Chí Minh</b></p>
+</td>
+    <td width="50%" style="text-align: right;">
+        <p><b>Liên Hệ: Họ và tên học sinh <a href="danh.html">Nguyễn Lâm Minh Danh</a>_Lớp12.1_05</b></p>
+           <p><b>Liên Hệ: Họ và tên học sinh<a href="tanh.html"> Đặng Đàm Tuấn Anh</a>_Lớp12.1_01</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="thanh.html"> Lê Trường Thành</a>_Lớp12.1_28</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="vu.html"> Nguyễn Anh Vũ</a>_Lớp12.1_36</b></p>
+        </td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+</html>

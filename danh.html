@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CẢM NHẬN - NGUYỄN LÂM MINH DANH</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#ffecd2,#fcb69f);
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#ff416c,#ff4b2b);
+    color:white;
+    text-align:center;
+    padding:30px;
+     position: relative;
+}
+
+header img{
+    position: absolute;
+    top: 0;
+    left:10px;
+}
+
+nav{
+    background:#ff6f61;
+    text-align:center;
+    padding:10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* NÚT QUAY VỀ TRANG CHỦ CỐ ĐỊNH */
+.btn-home-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff416c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1001;
+    transition: 0.3s;
+}
+
+.btn-home-fixed:hover {
+    background: #ff4b2b;
+    transform: scale(1.1);
+}
+
+/* BANNER */
+.banner{
+    height:750px;
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("img/76.jpg") no-repeat center;
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    text-shadow:2px 2px 5px black;
+    text-align: center;
+    padding: 20px;
+}
+
+/* SECTION */
+.container{
+    width:85%;
+    margin:40px auto;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    margin-bottom:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.section h2{
+    color:#ff416c;
+    margin-bottom:15px;
+    border-bottom: 2px solid #ffecd2;
+    padding-bottom: 5px;
+}
+
+/* GALLERY CHO TỪNG MỤC (2 ẢNH) */
+.sub-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia đôi để hiện 2 ảnh 1 hàng */
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.sub-gallery img {
+    width: 100%;
+    height: 150px; /* Tăng chiều cao một chút cho đẹp */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 2px solid #eee;
+}
+
+.sub-gallery img:hover {
+    transform: scale(1.05);
+    border-color: #ff416c;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:linear-gradient(135deg,#36d1dc,#5b86e5);
+    color:white;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-content{
+    padding:20px;
+    flex-grow: 1;
+}
+
+.card-content h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer{
+    background:linear-gradient(90deg,#ff4b2b,#ff416c);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="btn-home-fixed">🏠 Về Trang Chủ</a>
+
+<header id="top">
+    <img width="10%" src="img/88.png">
+    <h1>👑 CẢM NHẬN CỦA THÁI TỬ ALBERT 👑</h1>
+    <p>🌟 NGUYỄN LÂM MINH DANH - Lớp 12.1 - PHÁ GIA CHI TỬ 🌟</p>
+    <p>✨ Em nhớ mãi không khí vui tươi và những tiếng cười giòn tan 😂🎶</p>
+    <h5>💥🎓 Nỗ Lực Không Ngừng – Vươn Xa Không Giới Hạn 🌍✨</h5>
+</header>
+
+<nav>
+    <a href="index.html">🏠 Trang Chủ</a>
+    <a href="#chung">📜 Cảm nhận chung</a>
+    <a href="#cuthe">💖 Cảm xúc cụ thể</a>
+    <a href="#uocmo">🚀 Suy nghĩ & Ước mơ</a>
+</nav>
+
+<div class="banner">
+    🌟 NGUYỄN LÂM MINH DANH 🎶<br>
+    🎒💫 Những ngày ấy đầy ắp tiếng nói cười thân thương 🗣️😂
+và niềm hạnh phúc giản đơn nhưng thật đẹp 🌈💖
+</div>
+
+<div class="container">
+
+    <div class="section" id="chung">
+        <h2>📜 Cảm nhận chung</h2>
+        <p>Ba năm học dưới mái trường THPT Huỳnh Văn Nghệ là một hành trình rực rỡ sắc màu 🌈✨. Đó không chỉ là quãng thời gian học tập mà còn là chặng đường trưởng thành đầy cảm xúc của tuổi thanh xuân 🎓💫</p>
+        <p>Đối với Danh, mỗi ngày đến lớp không chỉ là để tiếp thu kiến thức 📚✍️ mà còn là để được sống trong không khí ấm áp của gia đình 12.1 thân thương 💙🏫. Ở đó có tiếng cười giòn tan 😂, những giờ học nghiêm túc 🤓 và cả những khoảnh khắc cùng nhau cố gắng vì mục tiêu chung 🌟🔥</p>
+        <p>Tinh thần “Phá Gia” nhiệt huyết luôn cháy hết mình trong mọi hoạt động 🚀💥 đã giúp mình trưởng thành hơn từng ngày. Sự gắn kết, yêu thương và sẻ chia 🤝💞 khiến mỗi thành viên đều cảm nhận được giá trị của tình bạn và tinh thần đồng đội ✨</p>
+        <p> Ba năm cấp ba trôi qua với biết bao kỷ niệm đáng nhớ 🎞️🌸. Chuyến đi trải nghiệm tại Đà Lạt mộng mơ 🌲🏔️ với tiết trời se lạnh ❄️ và những buổi vui chơi rộn ràng thật sự khó quên 💚. Hoạt động mừng Đảng mừng Xuân sôi nổi 🎉🌺, rực rỡ sắc màu đã thắp lên ngọn lửa nhiệt huyết trong mỗi chúng mình 🔥🌼. Hội trại tuy có mệt mỏi ⛺💦 nhưng lại tràn ngập tiếng cười và những khoảnh khắc gắn kết đáng trân trọng 😆🌟</p>
+        <p>Cuối cùng, Danh xin gửi lời cảm ơn chân thành đến tập thể lớp 12.1 💌💐 vì đã cùng nhau viết nên những trang ký ức đẹp nhất của tuổi học trò 📖💖. Thanh xuân ấy sẽ mãi là điều tuyệt vời nhất trong tim mình 💕🌈</p>
+    </div>
+
+    <div class="section" id="cuthe">
+        <h2>💖 Cảm xúc qua từng chặng đường</h2>
+        <div class="cards">
+            
+            <div class="card">
+                <div class="card-content">
+                    <h3>🌲 Đi Đà Lạt</h3>
+                    <p>Chuyến đi 3N2Đ tại Đà Lạt là kỷ niệm khó quên của Danh và tập thể 12.1 🌿✨. Cả lớp cùng tham quan Quảng trường Đà Lạt 🏞️🌸, dạo quanh Chợ Đà Lạt nhộn nhịp 🛍️🍓, thưởng thức món ngon nóng hổi 🍢♨️ và lưu lại thật nhiều bức ảnh đáng nhớ 📸🤳 giữa tiết trời se lạnh ❄️💙</p>
+                    <p>Hành trình thêm trọn vẹn khi chúng mình khám phá Mongo Land 🏕️🌾 và ghé thăm Nhà thờ Mai Anh yên bình ⛪🌸. Mỗi tối về phòng, cả nhóm lại quây quần trò chuyện, cười đùa rộn ràng 😂💬. Những cái khoác vai thân thiết và tiếng cười vang giữa cao nguyên chính là minh chứng cho sự gắn bó của lớp 💞🤝. Chuyến đi ấy sẽ mãi là ký ức đẹp của tuổi học trò 🎓🌈💕</p>
+                    <p>Chúc 12.1 có chuyến đi Đà Lạt thật vui và tràn ngập tiếng cười 🌿🏔️😆✨. Mong chúng ta luôn khoác vai nhau thật chặt giữa cái lạnh cao nguyên ❄️🤝💙, cùng lưu giữ những khoảnh khắc thanh xuân rực rỡ 📸🌈🎓💕</p>
+                    <div class="sub-gallery">
+                        <img src="img/78.jpg" alt="Đà Lạt 1">
+                        <img src="img/80.jpg" alt="Đà Lạt 2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>🌸 Mừng Đảng Mừng Xuân</h3>
+                    <p>Những ngày chuẩn bị cho chương trình mừng Đảng mừng Xuân thật sự là khoảng thời gian đáng nhớ 🎉🌸✨. Cả lớp 12.1 đã cùng nhau miệt mài luyện tập từng động tác, từng bước nhảy 💃🕺🔥. Có những hôm ai cũng mệt mỏi, đẫm mồ hôi 😅💦, đôi lúc Danh cũng lo lắng không biết mình có đủ sức “bùng cháy” trên sân khấu hay không 😰🎭. Nhưng chính sự động viên, ánh mắt quyết tâm của cả tập thể đã tiếp thêm sức mạnh 💪💞</p>
+                    <p>Khoảnh khắc đứng dưới ánh đèn rực rỡ 🌟🎇, nghe tiếng nhạc vang lên và cùng nhau tỏa sáng là niềm tự hào khó quên của Danh 🎶✨. Và rồi khi biết tin tiết mục đạt giải 🏆🎊, cảm xúc như vỡ òa, tất cả ôm chầm lấy nhau trong hạnh phúc 😭🤗💖</p>
+                    <p>Cảm ơn tập thể 12.1 vì đã cùng nhau cố gắng, cùng nhau cháy hết mình và viết nên một kỷ niệm thật đẹp của tuổi thanh xuân 🌈🎓💕</p>
+                    
+                    <div class="sub-gallery">
+                        <img src="img/81.jpg" alt="Xuân 1">
+                        <img src="img/82.jpg" alt="Xuân 2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>🎪 Hội Trại</h3>
+                    <p>Hội trại là một trong những kỷ niệm sôi nổi và đáng nhớ nhất của 12.1 🎪🔥✨. Những ngày làm trại thật sự vất vả khi cả lớp cùng nhau dựng gian hàng tre 🌿, buộc dây, trang trí giữa nắng gió 😅💦. Tuy mệt mỏi nhưng tiếng cười luôn vang lên khắp nơi 😂🎉. Chính tinh thần đoàn kết 🤝💞 đã biến những thanh tre khô khốc thành một gian hàng rực rỡ và đầy sáng tạo 🌈🏕️</p>
+                    <p>Không khí làm “xập xình” sôi động 🎶💃 nhưng cũng không kém phần thấm mệt. Các thành viên cùng nhau xúm tụ nấu đồ ăn 🍳🍢, chuẩn bị từng món thật chỉn chu. Khoảnh khắc bán hàng “siêu đắt” 🛍️💸 khiến ai cũng phấn khởi, hò reo không ngớt 😆🎊</p>
+                    <p>Cảm ơn tập thể 12.1 vì đã cùng nhau cố gắng, cùng nhau cháy hết mình 🔥💙. Hội trại không chỉ là hoạt động vui chơi mà còn là minh chứng cho tình bạn và sự gắn bó tuyệt vời của chúng ta 🎓🌟💕</p>
+                    
+                    <div class="sub-gallery">
+                        <img src="img/83.jpg" alt="Trại 1">
+                        <img src="img/84.jpg" alt="Trại 2">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" id="uocmo">
+        <h2>🚀 Suy nghĩ và Ước mơ</h2>
+        <p><b>Suy nghĩ:</b>Sau những trải nghiệm đáng nhớ, Danh nhận ra rằng mọi chuyến đi tuy có mệt mỏi nhưng luôn mang lại thật nhiều niềm vui và kỷ niệm đẹp 🌿✨😊. Chuyến đi trải nghiệm giúp cả lớp thêm gắn bó 🤝💙. Hoạt động mừng Đảng mừng Xuân dù vất vả tập luyện 😅🔥 nhưng để lại cảm xúc tự hào khó quên 🎭🏆. Hội trại tuy thấm mệt 💦🎪 nhưng chan chứa tiếng cười và tình bạn 🌈😆. Tất cả đã tạo nên một thanh xuân rực rỡ và đáng trân trọng 🎓💕🌟</p>
+         <p><b>Ước mơ:</b>Điều ước lớn nhất của Danh là đỗ nguyện vọng 1 vào ngôi trường mình mơ ước 🎓✨📚, mở ra một tương lai tươi sáng phía trước 🌅💫. Danh mong rằng dù sau này có đi đến đâu 🚆🌍, vẫn luôn ghi nhớ những kỷ niệm đẹp và những lần cùng 12.1 cười đùa rộn ràng 😆💙🤝. Ước rằng tập thể lớp 12.1 sẽ luôn thành công trên con đường riêng của mình 🌈🚀 và tất cả chúng ta đều đỗ nguyện vọng 1 như mong đợi 🏆🎉💕</p>
+        <p style="font-style: italic; font-weight: bold; color: #ff416c; margin-top: 15px;">
+            🌟 "Chúc cả lớp chúng ta cùng nhau chạm tới ước mơ đại học và mãi mãi giữ lấy những nụ cười giòn tan của tuổi học trò!" 🎓🚀
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>Bản quyền cảm nhận thuộc về Thái tử Albert (Minh Danh)</p>
+    <p>Thành viên Nhóm PHÁ GIA CHI TỬ - Lớp 12.1</p>
+     <table>
+        <tr>
+        <td width="50%"> 
+    <p><b>📧 Email Trường THPT Huỳnh Văn Nghệ:<a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank"> thpthvnbinhduong@gmail.com </a></b></p>
+   <p> <b>Liên Hệ Số Điện Thoại: 0274.365.6357</b></p>
+   <p><b>Địa chỉ: Khu phố Uyên Hưng 4, phường Tân Uyên, thành phố Hồ Chí Minh</b></p>
+</td>
+    <td width="50%" style="text-align: right;">
+        <p><b>Liên Hệ: Họ và tên học sinh <a href="danh.html">Nguyễn Lâm Minh Danh</a>_Lớp12.1_05</b></p>
+           <p><b>Liên Hệ: Họ và tên học sinh<a href="tanh.html"> Đặng Đàm Tuấn Anh</a>_Lớp12.1_01</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="thanh.html"> Lê Trường Thành</a>_Lớp12.1_28</b></p>
+            <p><b>Liên Hệ: Họ và tên học sinh<a href="vu.html"> Nguyễn Anh Vũ</a>_Lớp12.1_36</b></p>
+        </td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+</html>
